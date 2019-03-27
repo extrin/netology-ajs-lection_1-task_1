@@ -18,4 +18,7 @@ const calculate_bonus = (cart) => {
 }
 
 const sample_cart = [200, 550, 4000, 23, 58, 5000, 485, 711];
-console.log(calculate_bonus(sample_cart));
+const bonus_value = calculate_bonus(sample_cart);
+document.getElementById("sample_data").innerHTML += sample_cart;
+console.log(bonus_value);
+document.getElementById("answer").innerHTML += bonus_value;
