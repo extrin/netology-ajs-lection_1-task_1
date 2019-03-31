@@ -14,10 +14,11 @@ const calculate_bonus = cart => {
     console.log("01 Input is not a user cart");
     return 0;
   }
-}
+};
 
 const sample_cart = [200, 550, 4000, 23, 58, 5000, 485, 711];
 const bonus_value = calculate_bonus(sample_cart);
 document.getElementById("sample_data").innerHTML += sample_cart;
-console.log(bonus_value);
 document.getElementById("answer").innerHTML += bonus_value;
+console.log("Sample cart:" + sample_cart);
+console.log("Bonus value" + bonus_value);
